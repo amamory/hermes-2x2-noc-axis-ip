@@ -1,0 +1,3 @@
+[submodule "hw/ips/hermes-router-axis-ip"]
+	path = hw/ips/hermes-router-axis-ip
+	url = https://github.com/amamory/hermes-router-axis-ip.git
