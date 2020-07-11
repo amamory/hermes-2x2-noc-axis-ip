@@ -1,7 +1,7 @@
 #export VIVADO=/opt/Xilinx/Vivado/2018.2/bin/vivado
 export VIVADO=/home/lsa/xilinx/2018.2/Vivado/2018.2/bin/vivado
-export VIVADO_DESIGN_NAME=ps_hermes
-export VIVADO_TOP_NAME=$VIVADO_DESIGN_NAME
+export VIVADO_DESIGN_NAME=noc_2x2
+export VIVADO_TOP_NAME=${VIVADO_DESIGN_NAME}_wrapper
 
 if [ -f $VIVADO ]; then
   echo "###################################"
