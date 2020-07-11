@@ -1,12 +1,12 @@
-# Vivado MODULE NAME
+# Vivado Hermes based 2x2 mesh network-on-chip
 
-This repo contains scripts to recreate **DESCRIBE THE MODULE HERE**. The project is setup for Zedboard, although it would be easy to change to other boards assuming you have some basic TCL skills.
+This repo contains scripts to recreate an 2x2 mesh network-on-chip based on [Hermes router](https://www.sciencedirect.com/science/article/abs/pii/S0167926004000185). The project is setup for Zedboard, although it would be easy to change to other boards assuming you have some basic TCL skills.
 
-# Module/IP design
+# IP design
 
-Describe here your module interface and protocols.
+The IP contains four masters and four slaves AXI streaming interfaces. The router ports are configured with 32-bit data width and input buffers of size 4. The IP frequency is currently set to 50MHz.
 
-![Place here a nice picture of your design](my-awesome-module.png)
+![2x2 mesh network-on-chip](noc2x2.png)
 
 # How to use this repository
 
