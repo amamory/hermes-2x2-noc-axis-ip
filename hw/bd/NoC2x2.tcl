@@ -193,7 +193,7 @@ proc create_hier_cell_NoC2x2_1 { parentCell nameHier } {
 
   # Create port connections
   connect_bd_net -net clock_0_1 [get_bd_pins clock] [get_bd_pins R0000/clock] [get_bd_pins R0001/clock] [get_bd_pins R0100/clock] [get_bd_pins R0101/clock]
-  connect_bd_net -net reset_0_1 [get_bd_pins reset_n] [get_bd_pins R0000/reset] [get_bd_pins R0001/reset] [get_bd_pins R0100/reset] [get_bd_pins R0101/reset]
+  connect_bd_net -net reset_0_1 [get_bd_pins reset_n] [get_bd_pins R0000/reset_n] [get_bd_pins R0001/reset_n] [get_bd_pins R0100/reset_n] [get_bd_pins R0101/reset_n]
   connect_bd_net -net xlconstant_0_dout [get_bd_pins R0001/readyN_i] [get_bd_pins R0001/readyW_i] [get_bd_pins R0001/validN_i] [get_bd_pins R0001/validW_i] [get_bd_pins R0101/readyE_i] [get_bd_pins R0101/readyN_i] [get_bd_pins R0101/validE_i] [get_bd_pins R0101/validN_i] [get_bd_pins xlconstant_0/dout]
   connect_bd_net -net xlconstant_1_dout [get_bd_pins R0001/dataN_i] [get_bd_pins R0001/dataW_i] [get_bd_pins R0101/dataE_i] [get_bd_pins R0101/dataN_i] [get_bd_pins xlconstant_1/dout]
   connect_bd_net -net xlconstant_2_dout [get_bd_pins R0000/readyS_i] [get_bd_pins R0000/readyW_i] [get_bd_pins R0000/validS_i] [get_bd_pins R0000/validW_i] [get_bd_pins R0100/readyE_i] [get_bd_pins R0100/readyS_i] [get_bd_pins R0100/validE_i] [get_bd_pins R0100/validS_i] [get_bd_pins xlconstant_2/dout]
